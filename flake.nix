@@ -10,7 +10,7 @@
     };
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       username = "merki";
       system = "x86_64-linux";
@@ -20,7 +20,7 @@
       };
     in
     {
-      nixosConfigurations.nixos = pkgs.lib.nixosSystem {
+      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
             ./configuration.nix
@@ -33,5 +33,5 @@
           ./home/home.nix
         ];
       };
-    }
+    };
 }
