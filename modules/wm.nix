@@ -1,4 +1,3 @@
-{ inputs, ... }:
 {
   services.xserver.enable = true;
   

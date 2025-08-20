@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ pkgs, ... }:
 {
   users.users.merki = {
     isNormalUser = true;

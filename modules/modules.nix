@@ -6,5 +6,5 @@
     ./sound.nix
     ./user.nix
     ./wm.nix
-  ]
+  ];
 }
