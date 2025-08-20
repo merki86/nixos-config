@@ -30,7 +30,7 @@
       homeConfigurations.merki = home-manager.lib.homeManagerConfiguration {
         pkgs = pkgs.legacyPackages.${system};
         modules = [
-          ./home.nix
+          ./home/home.nix
         ];
       };
     }
