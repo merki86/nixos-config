@@ -10,7 +10,7 @@
     };
   };
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self, nixpkgs }:
     let
       username = "merki";
       system = "x86_64-linux";
@@ -34,5 +34,4 @@
         ];
       };
     }
-  }
 }
