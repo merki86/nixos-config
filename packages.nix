@@ -25,7 +25,6 @@
     yazi
     mc
     lf
-    logmein-hamachi
 
     # Programs
     spotify
