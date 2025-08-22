@@ -27,7 +27,7 @@
         ];
       };
 
-      homeConfigurations.merki = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
         pkgs = pkgs.legacyPackages.${system};
         modules = [
           ./home/home.nix
