@@ -47,6 +47,9 @@
   fonts.packages = with pkgs; [
     jetbrains-mono
     noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-cjk-serif
+    noto-fonts-lgc-plus
     noto-fonts-emoji
     twemoji-color-font
     font-awesome
