@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ pkgs, inputs, ... }:
 {
   imports =
     [
@@ -49,12 +49,12 @@
 
     # optional Nvidia hardware acceleration
     package = (
-      inputs.pkgs.obs-studio.override {
+      pkgs.obs-studio.override {
         cudaSupport = true;
       }
     );
 
-    plugins = with inputs.pkgs.obs-studio-plugins; [
+    plugins = with pkgs.obs-studio-plugins; [
       wlrobs
       obs-backgroundremoval
       obs-pipewire-audio-capture
