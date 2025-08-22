@@ -24,11 +24,14 @@
     blueberry
     yazi
     mc
+    lf
+    logmein-hamachi
 
     # Programs
     spotify
     discord
     brave
+    librewolf
     gimp3
     krita
     audacity
