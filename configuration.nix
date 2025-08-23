@@ -30,38 +30,6 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  hardware = {
-    # Opengl
-    graphics = {
-      enable = true;
-      enable32Bit = true;
-      extraPackages = with pkgs; [
-        libva
-        libva-utils
-        vdpauinfo
-        vaapiVdpau
-        libvdpau-va-gl
-        nvidia-vaapi-driver
-        intel-media-driver
-      ];
-    };
-    
-    # Most wayland compositors need this
-    nvidia = {
-      open = false;
-      modesetting.enable = true;
-    };
-  };
-
-  environment.sessionVariables = {
-    LIBVA_DRIVER_NAME = "nvidia";
-    VDPAU_DRIVER = "nvidia";
-    NVD_BACKEND = "direct";
-    MOZ_X11_EGL = "1";
-    MOZ_ENABLE_WAYLAND = "1";
-    NIXOS_OZONE_WL=1;
-  };
-
   # TODO: Move all these above
 
   # Install zsh
