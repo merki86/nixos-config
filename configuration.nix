@@ -34,21 +34,31 @@
     # Opengl
     graphics = {
       enable = true;
+      driSupport = true;
+      driSupport32Bit = true;
       extraPackages = with pkgs; [
-        intel-media-driver
-        vaapiVdpau
-        libvdpau
+        libva
+        vainfo
         vdpauinfo
+        vaapiVdpau
+        libvdpau-va-gl
+        nvidia-vaapi-driver
+        intel-media-driver
       ];
     };
     
     # Most wayland compositors need this
     nvidia = {
+      open = false;
       modesetting.enable = true;
-      open = true;
     };
   };
-  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
+
+  environment.sessionVariables = {
+    LIBVA_DRIVER_NAME = "nvidia";
+    NVD_BACKEND = "direct";
+    NIXOS_OZONE_WL=1;
+  };
 
   # TODO: Move all these above
 
