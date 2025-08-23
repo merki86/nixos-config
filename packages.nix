@@ -12,6 +12,7 @@
     gnumake
     usbutils
     ffmpeg_6
+    wl-clipboard
 
     # Tools
     git
@@ -25,6 +26,10 @@
     yazi
     mc
     lf
+
+    # For windows managers
+    swww
+    wofi
 
     # Programs
     spotify
