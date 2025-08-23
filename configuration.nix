@@ -43,7 +43,10 @@
     };
     
     # Most wayland compositors need this
-    nvidia.modesetting.enable = true;
+    nvidia = {
+      modesetting.enable = true;
+      open = true;
+    };
   };
   environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
 
