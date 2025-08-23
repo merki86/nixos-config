@@ -5,6 +5,19 @@
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.xfce.enable = true;
 
+  programs.hyprland = {
+    enable = true;
+    withUSM = true;
+    xwayland.enable = true;
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [ xdg-desktop-portal-hyprland ];
+  };
+
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
   services.xserver.xkb = {
     layout = "us,kz";
     variant = "";
