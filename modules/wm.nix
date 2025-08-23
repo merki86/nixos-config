@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   services.xserver.enable = true;
   
   # Enable the XFCE Desktop Environment.
