@@ -10,6 +10,12 @@
     variant = "";
   };
 
+  services.xserver.videoDrivers = [
+    "modesetting"
+    "fbdev"
+    "nvidia"
+  ];
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 }

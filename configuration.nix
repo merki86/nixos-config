@@ -32,11 +32,20 @@
 
   hardware = {
     # Opengl
-    graphics.enable = true;
+    graphics = {
+      enable = true;
+      extraPackages = with pkgs; [
+        intel-media-driver
+        vaapiVdpau
+        libvdpau
+        vdpauinfo
+      ];
+    };
     
     # Most wayland compositors need this
-    # nvidia.modesetting.enable = true;
+    nvidia.modesetting.enable = true;
   };
+  environment.sessionVariables = { LIBVA_DRIVER_NAME = "iHD"; };
 
   # TODO: Move all these above
 
