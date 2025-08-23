@@ -37,7 +37,7 @@
       enable32Bit = true;
       extraPackages = with pkgs; [
         libva
-        vainfo
+        libva-utils
         vdpauinfo
         vaapiVdpau
         libvdpau-va-gl

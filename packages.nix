@@ -12,7 +12,6 @@
     gnumake
     usbutils
     ffmpeg_6
-    libva-utils
 
     # Tools
     git
