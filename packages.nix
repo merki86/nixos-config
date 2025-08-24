@@ -30,6 +30,9 @@
     # For windows managers
     swww
     wofi
+    hyprshot
+    grim
+    slurp
 
     # Programs
     spotify
