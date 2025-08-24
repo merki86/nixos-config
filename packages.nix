@@ -13,6 +13,8 @@
     usbutils
     ffmpeg_6
     wl-clipboard
+    zip
+    unzip
 
     # Tools
     git
