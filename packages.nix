@@ -51,7 +51,7 @@
 
     # Games
     prismlauncher
-    osu-lazer
+    osu-lazer-bin
   ];
 
   fonts.packages = with pkgs; [
