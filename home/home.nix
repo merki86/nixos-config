@@ -1,4 +1,8 @@
 {
+  imports = [
+    ./hyprpanel.nix
+  ];
+
   home = {
     username = "merki";
     homeDirectory = "/home/merki";
