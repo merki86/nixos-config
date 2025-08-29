@@ -17,8 +17,9 @@
     unzip
 
     # Tools
-    git
+    home-manager
     alacritty
+    git
     jq
     fastfetch
     btop

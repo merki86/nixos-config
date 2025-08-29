@@ -28,4 +28,13 @@
       colors.primary.background = "#1d2021";
     };
   };
+
+  home-manager.users.merki = {
+    services.gammastep = {
+      enable = true;
+      provider = "manual";
+      latitude = 51.17;
+      longitude = 71.45;
+    }
+  }
 }
