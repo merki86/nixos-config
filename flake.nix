@@ -28,7 +28,7 @@
       };
 
       homeConfigurations.${username} = home-manager.lib.homeManagerConfiguration {
-        pkgs = pkgs.legacyPackages.${system};
+        pkgs = pkgs;
         modules = [
           ./home/home.nix
         ];

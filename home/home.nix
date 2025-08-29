@@ -1,9 +1,4 @@
 {
-  imports = [
-    ./zsh.nix
-    ./modules/bundle.nix
-  ];
-
   home = {
     username = "merki";
     homeDirectory = "/home/merki";
@@ -29,12 +24,10 @@
     };
   };
 
-  home-manager.users.merki = {
-    services.gammastep = {
-      enable = true;
-      provider = "manual";
-      latitude = 51.17;
-      longitude = 71.45;
-    }
-  }
+  services.gammastep = {
+    enable = true;
+    provider = "manual";
+    latitude = 51.17;
+    longitude = 71.45;
+  };
 }
