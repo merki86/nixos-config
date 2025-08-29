@@ -31,6 +31,7 @@
 
     # For windows managers
     swww
+    mpvpaper
     wofi
     hyprshot
     grim
