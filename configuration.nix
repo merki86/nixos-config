@@ -29,8 +29,8 @@
 
   # IME for japanese
   i18n.inputMethod = {
-    enabled = "mozc";
-    fcitx5.enable = true; 
+    enabled = "fcitx";
+    fcitx.engines = with pkgs.fcitx-engines; [ mozc ];
   };
 
   # Enable CUPS to print documents.
