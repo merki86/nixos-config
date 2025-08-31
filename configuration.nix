@@ -27,6 +27,12 @@
     LC_TIME = "kk_KZ.UTF-8";
   };
 
+  # IME for japanese
+  i18n.inputMethod = {
+    enabled = "mozc";
+    fcitx5.enable = true; 
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
