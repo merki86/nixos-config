@@ -29,7 +29,7 @@
 
   # IME for japanese
   i18n.inputMethod = {
-    enabled = "fcitx";
+    enabled = "fcitx5";
     fcitx.engines = with pkgs.fcitx-engines; [ mozc ];
   };
 
