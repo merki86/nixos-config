@@ -13,9 +13,9 @@
       layout = {
         bar.layouts = {
           "0" = {
-            left = [ "dashboard" "workspaces" ];
-            middle = [ "media" ];
-            right = [ "volume" "systray" "notifications" ];
+            left = [ "dashboard" "workspaces" "media" ];
+            middle = [ ];
+            right = [ "volume" "cpu" "cputemp" "systray" "notifications" ];
           };
         };
       };
@@ -25,10 +25,9 @@
 
       menus.clock = {
         time = {
-          military = true;
-          hideSeconds = true;
+          military = false;
+          hideSeconds = false;
         };
-        weather.unit = "metric";
       };
 
       menus.dashboard.directories.enabled = false;
@@ -37,8 +36,8 @@
       theme.bar.transparent = true;
 
       theme.font = {
-        name = "CaskaydiaCove NF";
-        size = "16px";
+        name = "Jetbrains Mono";
+        size = "14px";
       };
     };
   };
