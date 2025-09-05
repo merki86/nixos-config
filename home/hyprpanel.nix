@@ -1,7 +1,6 @@
 { inputs, ... }:
 {
   programs.hyprpanel = {
-    enable = true;
     # Configure and theme almost all options from the GUI.
     # See 'https://hyprpanel.com/configuration/settings.html'.
     # Default: <same as gui>
@@ -13,9 +12,9 @@
       layout = {
         bar.layouts = {
           "0" = {
-            left = [ "dashboard" "workspaces" "media" ];
-            middle = [ ];
-            right = [ "volume" "cpu" "cputemp" "systray" "notifications" ];
+            left = [ "dashboard" "workspaces" ];
+            middle = [ "media" ];
+            right = [ "volume" "cputemp" "systray" "notifications" ];
           };
         };
       };
@@ -28,6 +27,7 @@
           military = false;
           hideSeconds = false;
         };
+        weather.unit = "metric";
       };
 
       menus.dashboard.directories.enabled = false;
@@ -36,8 +36,8 @@
       theme.bar.transparent = true;
 
       theme.font = {
-        name = "Jetbrains Mono";
-        size = "14px";
+        name = "CaskaydiaCove NF";
+        size = "16px";
       };
     };
   };
