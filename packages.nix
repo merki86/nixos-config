@@ -50,6 +50,7 @@
     go
     vscode
     kdePackages.kdenlive
+    anki-bin
 
     # Games
     prismlauncher
