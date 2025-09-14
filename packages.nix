@@ -37,6 +37,7 @@
     grim
     slurp
     kdePackages.polkit-kde-agent-1
+    kdePackages.polkit-qt-1
 
     # Programs
     spotify
