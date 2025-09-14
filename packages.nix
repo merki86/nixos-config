@@ -37,6 +37,7 @@
     hyprshot
     grim
     slurp
+    xfce-polkit
 
     # Programs
     spotify
@@ -50,7 +51,6 @@
     go
     vscode
     kdePackages.kdenlive
-    kdePackages.dolphin
     anki-bin
 
     # Games
