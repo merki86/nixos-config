@@ -43,6 +43,10 @@
 
   # TODO: Move all these above
 
+  services.gvfs.enable = true;
+  services.udisks2.enable = true;
+  services.polkit.enable = true;
+
   # Install zsh
   programs.zsh.enable = true;
 
