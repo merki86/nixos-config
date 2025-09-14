@@ -50,6 +50,7 @@
     go
     vscode
     kdePackages.kdenlive
+    kdePackages.dolphin
     anki-bin
 
     # Games
