@@ -45,7 +45,7 @@
 
   services.gvfs.enable = true;
   services.udisks2.enable = true;
-  services.polkit.enable = true;
+  security.polkit.enable = true;
 
   # Install zsh
   programs.zsh.enable = true;
