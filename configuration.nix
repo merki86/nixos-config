@@ -43,6 +43,8 @@
 
   # TODO: Move all these above
 
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.hyprland.enableGnomeKeyring = true;
   services.gvfs.enable = true;
   services.udisks2.enable = true;
   security.polkit.enable = true;
