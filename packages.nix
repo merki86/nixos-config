@@ -28,7 +28,6 @@
     blueberry
     yazi
     mc
-    lf
 
     # For windows managers
     swww
@@ -37,7 +36,7 @@
     hyprshot
     grim
     slurp
-    xfce-polkit
+    kdePackages.polkit-kde-agent-1
 
     # Programs
     spotify
@@ -51,6 +50,7 @@
     go
     vscode
     kdePackages.kdenlive
+    kdePackages.dolphin
     anki-bin
 
     # Games
