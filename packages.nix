@@ -28,6 +28,7 @@
     blueberry
     yazi
     mc
+    zerotierone
 
     # For windows managers
     swww
